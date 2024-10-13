@@ -37,7 +37,7 @@ static inline unsigned page_shift(void)
 
 #else /* CR_NOGLIBC */
 
-extern unsigned page_size(void);
+extern unsigned long page_size(void);
 #define PAGE_SIZE page_size()
 
 #endif /* CR_NOGLIBC */
